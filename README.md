@@ -234,3 +234,6 @@ and error handling for missing files and invalid arguments.
 Submitted as original coursework for the Computer Vision course
 "Build Your Own Project" evaluation. All code in this repository was
 authored for this assignment.
+
+## 15. Author
+Manish (24BAI10899)

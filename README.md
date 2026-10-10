@@ -83,8 +83,8 @@ sign-language-recognition/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<github-username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/manish42sharma/Computer-vision-vityarthi-project.git
+cd Computer-vision-vityarthi-project
 
 # 2. (Recommended) create a virtual environment
 python3 -m venv .venv

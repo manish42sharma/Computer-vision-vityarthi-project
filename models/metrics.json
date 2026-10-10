@@ -1,0 +1,17 @@
+{
+  "model_type": "random_forest",
+  "n_samples": 2188,
+  "n_classes": 5,
+  "classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "train_accuracy": 1.0,
+  "test_accuracy": 0.9977,
+  "training_time_seconds": 0.331,
+  "cross_val_mean_accuracy": 0.9954,
+  "cross_val_std": 0.0039
+}

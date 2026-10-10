@@ -1,0 +1,40 @@
+2026-10-10 10:54:19 | INFO    | __main__ | Wrote synthetic dataset with 750 samples across 5 classes to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\data\processed\landmarks_dataset.csv
+2026-10-10 10:54:52 | INFO    | src.dataset | Loaded dataset: 750 samples across 5 classes
+2026-10-10 10:54:52 | INFO    | __main__ | Training 'random_forest' on 750 samples (600 train / 150 test)...
+2026-10-10 10:54:54 | INFO    | src.model | Saved model to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\models\sign_classifier.pkl and label encoder to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\models\label_encoder.pkl
+2026-10-10 10:54:54 | INFO    | src.model | Saved metrics to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\models\metrics.json
+2026-10-10 10:54:54 | INFO    | __main__ | train completed in 1.539 seconds
+2026-10-10 10:55:09 | INFO    | src.dataset | Loaded dataset: 750 samples across 5 classes
+2026-10-10 10:55:09 | INFO    | __main__ | Wrote evaluation report to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\models\evaluation_report.json
+2026-10-10 10:55:32 | INFO    | __main__ | Processing class 'A' (0 images)
+2026-10-10 10:55:32 | INFO    | __main__ | Class 'A': 0/0 images yielded a hand pose
+2026-10-10 10:55:32 | INFO    | __main__ | Processing class 'B' (0 images)
+2026-10-10 10:55:32 | INFO    | __main__ | Class 'B': 0/0 images yielded a hand pose
+2026-10-10 10:55:32 | ERROR   | __main__ | Invalid value / bad input: No usable samples were extracted from any image.
+2026-10-10 10:55:52 | INFO    | __main__ | Recording class 'A' for 15 seconds (camera 0)...
+2026-10-10 10:56:08 | INFO    | __main__ | Wrote 404 rows to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\data\processed\landmarks_dataset.csv
+2026-10-10 10:56:08 | INFO    | __main__ | Captured 404 samples for class 'A'.
+2026-10-10 10:56:08 | INFO    | __main__ | collect_from_webcam completed in 15.831 seconds
+2026-10-10 10:56:09 | INFO    | __main__ | Recording class 'B' for 15 seconds (camera 0)...
+2026-10-10 10:56:24 | INFO    | __main__ | Wrote 436 rows to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\data\processed\landmarks_dataset.csv
+2026-10-10 10:56:24 | INFO    | __main__ | Captured 436 samples for class 'B'.
+2026-10-10 10:56:24 | INFO    | __main__ | collect_from_webcam completed in 15.586 seconds
+2026-10-10 10:56:57 | INFO    | __main__ | Recording class 'A' for 15 seconds (camera 0)...
+2026-10-10 10:57:12 | INFO    | __main__ | Wrote 172 rows to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\data\processed\landmarks_dataset.csv
+2026-10-10 10:57:12 | INFO    | __main__ | Captured 172 samples for class 'A'.
+2026-10-10 10:57:12 | INFO    | __main__ | collect_from_webcam completed in 15.738 seconds
+2026-10-10 10:57:14 | INFO    | __main__ | Recording class 'B' for 15 seconds (camera 0)...
+2026-10-10 10:57:29 | INFO    | __main__ | Wrote 426 rows to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\data\processed\landmarks_dataset.csv
+2026-10-10 10:57:29 | INFO    | __main__ | Captured 426 samples for class 'B'.
+2026-10-10 10:57:29 | INFO    | __main__ | collect_from_webcam completed in 15.653 seconds
+2026-10-10 10:57:48 | INFO    | src.dataset | Loaded dataset: 2188 samples across 5 classes
+2026-10-10 10:57:48 | INFO    | __main__ | Training 'random_forest' on 2188 samples (1750 train / 438 test)...
+2026-10-10 10:57:50 | INFO    | src.model | Saved model to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\models\sign_classifier.pkl and label encoder to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\models\label_encoder.pkl
+2026-10-10 10:57:50 | INFO    | src.model | Saved metrics to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\models\metrics.json
+2026-10-10 10:57:50 | INFO    | __main__ | train completed in 1.979 seconds
+2026-10-10 10:57:52 | INFO    | src.dataset | Loaded dataset: 2188 samples across 5 classes
+2026-10-10 10:57:52 | INFO    | __main__ | Wrote evaluation report to C:\Users\Amanraj\OneDrive\Aman Raj\OneDrive\Desktop\hlo new project\files\sign-language-recognition\sign-language-recognition\models\evaluation_report.json
+2026-10-10 10:58:10 | ERROR   | __main__ | Required file not found: Input image does not exist: samples/test_A.jpg
+2026-10-10 10:58:21 | ERROR   | __main__ | Invalid value / bad input: No image files found in samples/
+2026-10-10 10:58:35 | ERROR   | __main__ | Required file not found: Input video does not exist: samples/demo.mp4
+2026-10-10 10:58:51 | INFO    | __main__ | Starting live demo. Press 'q' to quit.

@@ -1,0 +1,55 @@
+$ python -m src.generate_demo_dataset --samples-per-class 150
+2026-09-16 18:41:28 | INFO    | __main__ | Wrote synthetic dataset with 750 samples across 5 classes to /home/claude/sign-language-recognition/data/processed/landmarks_dataset.csv
+Synthetic demo dataset written to /home/claude/sign-language-recognition/data/processed/landmarks_dataset.csv (750 samples, classes: A, B, C, D, E)
+NOTE: this is synthetic data for testing the pipeline only. Run collect_data.py with a real camera/images before real use.
+
+$ python -m src.train_model --model-type random_forest --cv-folds 5
+2026-09-16 18:41:29 | INFO    | src.dataset | Loaded dataset: 750 samples across 5 classes
+2026-09-16 18:41:29 | INFO    | __main__ | Training 'random_forest' on 750 samples (600 train / 150 test)...
+2026-09-16 18:41:31 | INFO    | src.model | Saved model to /home/claude/sign-language-recognition/models/sign_classifier.pkl and label encoder to /home/claude/sign-language-recognition/models/label_encoder.pkl
+2026-09-16 18:41:31 | INFO    | src.model | Saved metrics to /home/claude/sign-language-recognition/models/metrics.json
+2026-09-16 18:41:31 | INFO    | __main__ | train completed in 2.133 seconds
+
+=== Training Summary ===
+model_type                : random_forest
+n_samples                 : 750
+n_classes                 : 5
+classes                   : ['A', 'B', 'C', 'D', 'E']
+train_accuracy            : 1.0
+test_accuracy             : 1.0
+training_time_seconds     : 0.3889
+cross_val_mean_accuracy   : 1.0
+cross_val_std             : 0.0
+
+Model saved to: /home/claude/sign-language-recognition/models/sign_classifier.pkl
+
+$ python -m src.evaluate
+2026-09-16 18:41:32 | INFO    | src.dataset | Loaded dataset: 750 samples across 5 classes
+2026-09-16 18:41:32 | INFO    | __main__ | Wrote evaluation report to /home/claude/sign-language-recognition/models/evaluation_report.json
+
+=== Evaluation Report ===
+Samples evaluated: 150
+Classes: A, B, C, D, E
+
+class      precision    recall  f1-score   support
+A              1.000     1.000     1.000        30
+B              1.000     1.000     1.000        30
+C              1.000     1.000     1.000        30
+D              1.000     1.000     1.000        30
+E              1.000     1.000     1.000        30
+
+Overall accuracy: 1.000
+Macro F1-score  : 1.000
+
+Confusion matrix (rows = true, cols = predicted):
+  30    0    0    0    0
+   0   30    0    0    0
+   0    0   30    0    0
+   0    0    0   30    0
+   0    0    0    0   30
+
+$ python -m src.predict --input /tmp/missing.jpg
+2026-09-16 18:41:34 | ERROR   | __main__ | Required file not found: This mediapipe installation only exposes the newer Tasks API, which needs a hand_landmarker.task model file. Either:
+  (a) pip install a mediapipe version with the classic 'solutions' API (see requirements.txt), or
+  (b) download the model from https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task and place it at /home/claude/sign-language-recognition/models/hand_landmarker.task (or set MEDIAPIPE_HAND_MODEL_PATH).
+(exit code: 2)
